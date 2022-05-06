@@ -5,6 +5,8 @@
  */
 package serliogiron_lab3p2;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author usuario
@@ -12,6 +14,7 @@ package serliogiron_lab3p2;
 public class Edificio extends BienesInmuebles{
     int cantidad_locales;
     String nombre;
+    ArrayList <Apartamento> apartamentos = new ArrayList();
 
     //constructores
     public Edificio() {
@@ -31,6 +34,17 @@ public class Edificio extends BienesInmuebles{
     }
 
     //getters and setters
+
+    public ArrayList<Apartamento> getApartamentos() {
+        return apartamentos;
+    }
+
+    public void setApartamentos(ArrayList<Apartamento> apartamentos) {
+        this.apartamentos = apartamentos;
+    }
+    
+    
+    
     public int getCantidad_locales() {
         return cantidad_locales;
     }
